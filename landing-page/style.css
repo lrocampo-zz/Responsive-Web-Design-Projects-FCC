@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#header {
+    width: 100%; /* Full width */
+    position: fixed; /* Make it fixed */
+    display: flex; /* Flexbox model */
+    top: 0; /* Stay on top */
+    align-items: center; 
+    background-color:rgba(0, 0, 0, 0.6);
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+
+#header li, #header a {
+    font-weight: 500;
+    font-size: 16px;
+    opacity: 100%;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+
+#nav-bar {
+    width: 100%;
+    list-style: none;
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+#nav-bar li {
+    display: inline-block;
+    padding: 0px 30px;
+}
+
+a {
+    transition: all 0.3s ease 0s;
+    font-weight: bold;
+}
+
+#nav-bar a:hover {
+    color: #FE4343;
+}
+
+#home {
+    background: url("https://wallpaperaccess.com/full/635740.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding: 1vh 0 100vh; 
+    font-weight: bold;
+    text-shadow: 0.3px 0.3px 0.5px #000; 
+}
+
+#home h1, #home p {
+    margin: 60vh 0 3vh 0;
+    padding: 0 40vh;
+    text-align: center;
+}
+
+#home h1 {
+    padding-top: 3rem;
+}
+
+#home-text p {
+    margin: 0 0 3vh 0;
+}
+
+#header-img {
+    width: 50%;
+    height: auto;
+    cursor: pointer;
+}
+
+#form {
+    text-align: center;
+    margin: 5vh;
+}
+
+#email {
+    width: 60%;
+    padding: 1.3vh;
+    font-size: 150%;
+}
+
+.btn {
+    margin: 3vh;
+    padding: 1.5vh;
+    width: 10%;
+    font-size: 100%;
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    background: #FE4343;
+}
+
+.btn:hover {
+    background-color: #ff7070;
+    cursor: pointer;
+    text-shadow: none;
+}
+
+#anyone-anywhere {
+    color: #FE4343;
+}
+
+#home h1 {
+    margin-top: 5rem;
+    color: #fff;
+    font-size: 400%;
+    text-align: center;
+}
+
+#home p {
+    color: #fff;
+    font-size: 160%;
+    text-align: center;
+}
+
+#page-wrapper {
+    position: relative;
+}
+
+li {
+    list-style: none;
+}
+
+#how-it-works {
+    color: #fff;
+    background: #000;
+}
+
+#how-it-works > * {
+    padding: 1em;
+}
+
+#how-it-works h2 {
+    font-size: 3em;
+    text-align: center;
+}
+
+#sub-h2 p {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.grid {
+    font-size: 1.3em;
+    margin: 3em 10em 0 10em;
+    display: grid;
+    grid-auto-rows: minmax(150px, auto);
+}
+
+#video {
+    width: 100%;    
+}
+
+#upload {
+    color: #fff;
+    background: #000;
+    font-size: 1.5em;
+    padding: 10vh;
+    height: 100vh;
+    text-align: center;
+}
+
+#upload h2 {
+    margin: 2vh;
+    margin-bottom: 5vh;
+}
+
+a {
+    margin: 2vh;
+    color: #FE4343;
+}
+
+#upload a:hover {
+    color: #fff;
+}
+
+#pricing {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#title-pricing {
+    text-align: center;
+    margin: 2em 0 2em 0;
+    font-size: 2em;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(70%/3);
+    margin: 10px;
+    border: 1px solid #ff7070;
+    border-radius: 3px;
+    margin-bottom: 4em;
+}
+
+.product > .level {
+    background-color: #ddd;
+    color: #000;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.product > h2 {
+    margin-top: 15px;
+}
+
+.product > ol {
+    margin: 15px 0;
+}
+
+.product > ol > li {
+    padding: 5px 0;
+}
+
+.flex-container {
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    padding: 10px 2%;
+}
+
+#copyright {
+    text-align: center;
+}
+
+.flex-container li {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.btn-2 {
+    font-size: 100%;
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    background: #FE4343;
+    margin: 2vh;
+    padding: 1em;
+}
+
+@media (max-width: 680px) {
+
+    #header {
+        display: none;
+    }
+
+    #nav-bar {
+        display: none;
+    }
+
+    #home {
+        font-size: 0.7em;
+    }
+
+    #home h1, #home p{
+        padding: 0 2vw;
+    }
+
+    #form {
+        margin: 0;
+        margin-top: 5vh;
+        padding: 0;
+        width: 100%;
+    }
+
+    .btn {
+        width: 60%;
+    }
+
+    #sub-h2 p{
+        margin-left: 1vh;
+        margin-right: 1vh;
+    }
+
+    #video {
+        height: 60vh;
+    }
+
+    .grid {
+        margin: 0;
+        margin-bottom: 5vh;
+    }
+
+    .grid h3 {
+        margin: 3vh;
+        text-align: center;
+    }
+
+    .flex-container ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-container li {
+        margin: 0.3em;
+    }
+
+    #copyright {
+        margin-top: 1em;
+    }
+
+    #pricing {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 80%;
+        margin: 10px;
+        border: 1px solid #ff7070;
+        border-radius: 3px;
+        margin-bottom: 4em;
+    }
+  
+  #upload-text {
+    display: none;
+  }
+  
+  .upload-your-song, .analyze, .download {
+    font-size: 0.7em;
+  } 
+
+}

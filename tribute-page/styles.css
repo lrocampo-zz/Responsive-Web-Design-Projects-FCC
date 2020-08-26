@@ -1,0 +1,86 @@
+body {
+  font-family: "Open Sans";
+  padding-bottom: 0.5vw;
+}
+
+#main {
+  margin-top: -1.8vw;
+  padding-bottom: -5vw;
+  background-color: hsl(189, 6%, 93%);
+}
+
+#container {
+  background-color: hsl(49, 100%, 98%);
+  margin-left: 1vw;
+  margin-right: 1vw;
+  padding: 0 0 1vw 0;
+}
+
+#img-div img {
+  width: 65%;
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin-left: auto;
+  padding-top: 2vw;
+  margin-right: auto;
+}
+
+#img-div p, #tribute-info p {
+  text-align: center;
+  margin-bottom: auto;
+}
+
+#tribute-info {
+  margin-top: 2vw;
+  padding-bottom: 3vw;
+  font-size: 110%;
+  font-weight: bold;
+}
+
+#title h1, h2 {
+  text-align: center;
+}
+
+#title h1 {
+  font-size: 255%;
+  margin-bottom: 1.5vw;
+  margin-top: 3vw;
+  padding-top: 2vw;
+}
+
+#title h2 {
+  font-size: 100%;
+}
+
+#biography h3 {
+  text-align: center;
+  margin-top: 3vw;
+  margin-bottom: 1vw;
+}
+/* Lets center this ul */
+#biography {
+  text-align: center;
+}
+
+#biography ul {
+  display: inline-block;
+  margin-bottom: 3vw;
+  margin-left: 10vw;
+  text-align: left;
+}
+
+#biography li{
+  margin-top: 1.5vw;
+  padding-right: 1vw;
+}
+
+/* I want it to look nice also on mobile!*/
+@media (max-width: 640px) {
+    #biography li{
+      margin-top: 7vw;
+    }
+    #biography ul {
+      margin-left: 1vw;
+    }
+}

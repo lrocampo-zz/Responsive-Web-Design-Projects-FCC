@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+}
+
+.bg-image {
+    backdrop-filter: none;
+    backdrop-filter: blur(8px);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+body {
+    line-height: 1.6;
+    font-family: 'Raleway', 'Tahoma', sans-serif;
+}
+
+.container {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+.contact {
+    box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+}
+
+.contact > * {
+    padding: 1em;
+    margin-top: 2em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+#title, #description {
+    text-align: center;
+}
+
+.company-info {
+    background: hsl(204, 12%, 92%);
+    text-align: center;
+    padding: 0.2vw;
+}
+
+.form-control {
+    font: inherit;
+    width: 100%;
+}
+
+#submit {
+    background: #3689e6;
+    color:#fff;
+    width: 100%;
+    padding: 0.6em;
+    border: 0;
+    border-radius: 4px;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    text-rendering: optimizeLegibility;
+    font-size: 125%;
+}
+
+#submit:hover {
+    background-color: rgb(79, 180, 238);
+    cursor: pointer;
+    text-shadow: none;
+} 
